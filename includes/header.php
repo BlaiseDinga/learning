@@ -26,7 +26,7 @@
                         <a class="dropdown-item" href="#">Form Handling(CRUD)</a>
                         <a class="dropdown-item" href="php/calculator/index.php">PHP Calculator</a>
                         <a class="dropdown-item" href="php/chess-board/index.php">PHP Chess Board</a>
-                        <a class="dropdown-item" href="#">PHP Palindrome</a>
+                        <a class="dropdown-item" href="php/Palindrome/index.php">PHP Palindrome</a>
                         <a class="dropdown-item" href="#">PHP Arrays</a>
                         <a class="dropdown-item" href="#">PHP spiral</a>
                         <a class="dropdown-item" href="#">PHP Sudoku</a>
