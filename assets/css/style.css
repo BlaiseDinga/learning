@@ -1,0 +1,26 @@
+/*color classes*/
+:root{
+    --main-color: RGB(14, 207, 232);
+    --main-sub-color:  RGB(212, 250, 252);
+    --sub-color: RGB(137, 140, 139);
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+.bg-main-sub{
+    background-color: var(--main-sub-color) !important;
+}
+.bg-sub{
+    background-color: var(--sub-color);
+}
+.color-main{
+    color: var(--main-color);
+}
+.color-sub{
+    color: var(--sub-color);
+}
+
+html{
+    font-size: 16px;
+    font-family: Arial Narrow, sans-serif;
+}
