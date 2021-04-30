@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-main">
+    <nav class="navbar navbar-expand-lg bg-main primary-color mb-4">
         <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler ml-auto bg-main-sub" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -24,6 +24,7 @@
                     </a>
                     <div class="dropdown-menu bg-main-sub" aria-labelledby="navbarDropdownMenuLink1">
                         <a class="dropdown-item" href="#">Form Handling(CRUD)</a>
+                        <a class="dropdown-item" href="php/forms/index.php">Shape Generation</a>
                         <a class="dropdown-item" href="php/calculator/index.php">PHP Calculator</a>
                         <a class="dropdown-item" href="php/chess-board/index.php">PHP Chess Board</a>
                         <a class="dropdown-item" href="php/Palindrome/index.php">PHP Palindrome</a>
@@ -94,4 +95,5 @@
             </form>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div class="main-body">
+    <div class="container-fluid ">
