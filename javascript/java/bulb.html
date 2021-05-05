@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebDev and Programing Basics</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        .image {
+            width: 250px;
+            height: 500px;
+            margin: 80px;
+        }
+
+    </style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-main primary-color mb-4">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler ml-auto bg-main-sub" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PHP & Algorithms
+                </a>
+                <div class="dropdown-menu bg-main-sub" aria-labelledby="navbarDropdownMenuLink1">
+                    <a class="dropdown-item" href="#">Form Handling(CRUD)</a>
+                    <a class="dropdown-item" href="php/forms/index.php">Shape Generation</a>
+                    <a class="dropdown-item" href="php/calculator/index.php">PHP Calculator</a>
+                    <a class="dropdown-item" href="php/chess-board/index.php">PHP Chess Board</a>
+                    <a class="dropdown-item" href="php/Palindrome/index.php">PHP Palindrome</a>
+                    <a class="dropdown-item" href="#">PHP Arrays</a>
+                    <a class="dropdown-item" href="#">PHP spiral</a>
+                    <a class="dropdown-item" href="#">PHP Sudoku</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    OOP & UML
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                    <a class="dropdown-item" href="#">OOP Basics</a>
+                    <a class="dropdown-item" href="#">Class UNL structure</a>
+                    <a class="dropdown-item" href="#">Association, Aggregation, Composition etc</a>
+                    <a class="dropdown-item" href="#">Portraying Multiple linked Classes</a>
+                    <a class="dropdown-item" href="#">OOP Animals Project</a>
+                    <a class="dropdown-item" href="#">OOP starships Project</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    CodeIgniter(MVC)
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+                    <a class="dropdown-item" href="#">CRUD App</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink5" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Javascript
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
+                    <a class="dropdown-item" href="#">js Lightbulb</a>
+                    <a class="dropdown-item" href="#">js Balloons</a>
+                    <a class="dropdown-item" href="#">js Rock Paper Scisors</a>
+                    <a class="dropdown-item" href="#">js Calculator</a>
+                    <a class="dropdown-item" href="#">js To Do List</a>
+                    <a class="dropdown-item" href="#">js Flashcards</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink6" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    JQuery
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink6">
+                    <a class="dropdown-item" href="#">Interactive SVG</a>
+                    <a class="dropdown-item" href="#">jQuery ToDo List</a>
+                    <a class="dropdown-item" href="#">Breaking Assistant</a>
+                    <a class="dropdown-item" href="#">Maze</a>
+                    <a class="dropdown-item" href="#">3D Restaurant</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink7" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    AJAX
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink7">
+                    <a class="dropdown-item" href="#">Tic Tac Toe</a>
+                    <a class="dropdown-item" href="#">FiFo</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 bg-main-sub" type="search" placeholder="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<div class="main-body">
+    <div class="container-fluid ">
+        <div class="container">
+
+            <img id="Image" class="image" onclick="lightOnOff()" src="bulb.jpg" width="300px" height="350px">
+
+        </div>
+
+        <script>
+            //this example shows how an object can be chang without reloading the page in js
+            function lightOnOff() {
+                var image = document.getElementById('Image');
+                if (image.src.match("bulbon")) {
+                    image.src = "bulb.jpg";
+                } else {
+                    image.src = "bulbon.jpg";
+                }
+            }
+        </script>
+
+    </div>
+
+    <footer class="page-footer bg-main-sub">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left py-4">
+
+            <div class="row">
+                <div class="col-4 text-center">
+                    <h5 class="text-uppercase color-sub">Services</h5>
+                    <ul class="list-unstyled ">
+                        <li>
+                            <a class="footer-links" href="#"> Link1</a>
+                        </li>
+                        <li>
+                            <a class="footer-links" href="#"> Link2</a>
+                        </li>
+                        <li>
+                            <a class="footer-links" href="#"> Link3</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4 text-center">
+                    <h5 class="text-uppercase color-sub">Management</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="footer-links" href="#"> Link1</a>
+                        </li>
+                        <li>
+                            <a class="footer-links" href="#"> Link2</a>
+                        </li>
+                        <li>
+                            <a class="footer-links" href="#"> Link3</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4 text-center">
+                    <h5 class="text-uppercase color-sub">contacts</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="footer-links" href="#"> Link1</a>
+                        </li>
+                        <li>
+                            <a class="footer-links" href="#"> Link2</a>
+                        </li>
+                        <li>
+                            <a class="footer-links" href="#"> Link3</a>
+                        </li>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 text-dark">© 2021 Copyright:
+            <a class="text-dark" href="#">C`N`G.de</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
